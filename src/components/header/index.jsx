@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <div className="header">
-      <img src={Logo} alt="logo" />
+      <a href="https://horixon.io/"><img src={Logo} alt="logo" /></a>
       <div>
       <Web3Button />
       </div>

@@ -44,7 +44,7 @@ function MainSection() {
   const [open, setOpen] = useState(false);
   const [currentToken, setCurrentToken] = useState(list[0]);
   const [approvalDone, setApprovalDone] = useState(false);
-  const gartVal = currentToken.name === "BNB" ? 208571 : 83;
+  const gartVal = currentToken.name === "BNB" ? 208571 : 42;
 
   const webSupply_Binance = new Web3("https://1rpc.io/bnb");
 
@@ -55,7 +55,7 @@ function MainSection() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const endDate = new Date("2024-03-30T00:00:00Z"); // Set your presale end date here
+      const endDate = new Date("2024-09-06T00:00:00Z"); // Set your presale end date here
       const now = new Date();
       const distance = endDate - now;
 
@@ -172,7 +172,8 @@ function MainSection() {
         <div className="main-section-form card">
 
           <div className="flex items-center justify-center">
-            <img src={presale} />
+            {/* <img src={presale} /> */}
+            <h1 span class="head-h1"><span class="head-text">Private Sale</span> Ends in</h1>
           </div>
 
           <h2 className=" text-size mt-5 relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-white">{timer}</h2>
